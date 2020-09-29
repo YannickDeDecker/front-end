@@ -44,22 +44,28 @@ footer{
 
 #section-one{
     width: 100%;
+    height: 500px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #section-two{
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
 }
 
 .articlebrown{
     background-color: peru;;
-    width: 50%;
     padding: 25px;
+    width: 29%;
 }
 
 .articleyellow{
     background-color: lightyellow;
-    width: 50%;
+    width: 29%;
     padding: 25px;
 }
