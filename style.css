@@ -1,5 +1,8 @@
-body{
-    background-color: lightsteelblue;
+*{
+    Margin:0;
+    Padding:0;
+    Border:0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container{
@@ -8,8 +11,11 @@ body{
 }
 
 header{
-    background-color: lightskyblue;
-    height: 150px;
+    background-image: url(images/gabriella-clare-marino-tHZ_EXGmOx4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
 }
 
 .header{
@@ -17,55 +23,92 @@ header{
     margin: 0;
 }
 
-nav{
-    background-color: white;
+.line{
+    background-color: #cbbeb5;
+    height: 10px;
 }
 
-ul{
-    display: inline-flex;
-    list-style: none;
+nav{
+    background-color: white;
+    height: 3rem;
+}
+
+.navbar{
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 li{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    text-decoration: none;
+    float: left;
 }
 
-.first{
-    padding-left: 0;
+li a{
+    text-decoration: none;
+    color: #514c48;
+    display: block;
+    text-align: center;
+    padding: 14px 40px;
+
+}
+
+li a:hover {
+    background-color: #514c48;
+    color: #cbbeb5;
+  }
+
+.active{
+    background-color: #514c48;
+    color: #cbbeb5;
 }
 
 footer{
-    background-color: lightskyblue;
+    background-color: #cbbeb5;
     height: 150px;
 }
 
 #section-one{
-    width: 100%;
-    height: 500px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+article{
+    width: 30%;
+    padding: 1rem;
 }
 
 #section-two{
-    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.background-dark{
+    background-color: #514c48;
+}
+
+#section-three{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    height: 500px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-.articlebrown{
-    background-color: peru;;
-    padding: 25px;
-    width: 29%;
+.form{
+    color: white;
 }
 
-.articleyellow{
-    background-color: lightyellow;
-    width: 29%;
-    padding: 25px;
+#section-two article{
+    margin: auto;
+}
+
+.form{
+    margin: auto;
+    text-align: center;
 }
