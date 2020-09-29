@@ -1,0 +1,65 @@
+body{
+    background-color: lightsteelblue;
+}
+
+.container{
+    max-width: 1366px;
+    margin: auto;
+}
+
+header{
+    background-color: lightskyblue;
+    height: 150px;
+}
+
+.header{
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav{
+    background-color: white;
+}
+
+ul{
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-decoration: none;
+}
+
+.first{
+    padding-left: 0;
+}
+
+footer{
+    background-color: lightskyblue;
+    height: 150px;
+}
+
+#section-one{
+    width: 100%;
+    display: flex;
+}
+
+#section-two{
+    width: 100%;
+    display: flex;
+}
+
+.articlebrown{
+    background-color: peru;;
+    width: 50%;
+    padding: 25px;
+}
+
+.articleyellow{
+    background-color: lightyellow;
+    width: 50%;
+    padding: 25px;
+}
