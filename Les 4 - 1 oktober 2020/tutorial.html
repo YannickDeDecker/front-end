@@ -25,8 +25,8 @@
     <div id="form">
         <div class="container">
             <h1>Login</h1>
-            <form action="post">
-                    <input type="text" id="username" name="username" placeholder="Enter Username" required autocomplete="on">
+            <form action="form.php" method="POST" autocomplete="off">
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
                     <input type="password" id="password" name="password" placeholder="Enter Password" required>
                     <input type="hidden" name="process" value="1">
                 <button class="login">Login</button>
