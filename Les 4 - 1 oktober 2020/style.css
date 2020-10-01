@@ -39,6 +39,7 @@ li a:hover{
 
 #form{
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 #form .container{
@@ -50,19 +51,16 @@ li a:hover{
 }
 
 #form h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     border-bottom: 3px solid #008080;
     margin-bottom: 2rem;
+    text-transform: uppercase;
 }
 
 #form form{
     background-color: #99cccc;
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 3rem;
 }
 
@@ -71,7 +69,7 @@ li a:hover{
     padding: 0.5rem;
     margin-bottom: 0.5rem;
     margin-top: 0;
-    width: 400px;
+    width: 100%;
 }
 
 #form label{
@@ -81,15 +79,40 @@ li a:hover{
     margin-bottom: 0;
 }
 
-.login{
+.login,.signup{
     border: none;
     width: 6rem;
     padding: 0.5rem;
     margin-top: 1rem;
     background-color: white;
+    margin-right: 1rem;
 }
 
-.login:hover{
+.login:hover,.signup:hover{
     background-color: #008080;
     color: white;
+}
+
+footer{
+    background-color: #4a597d;
+    height: 100px;
+    color: white;
+    text-align: center;
+    display: flex;
+}
+
+footer p{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+footer p a{
+    padding: 0 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover{
+    text-decoration: underline;
 }
