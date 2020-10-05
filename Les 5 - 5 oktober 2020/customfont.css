@@ -139,3 +139,11 @@ footer p{
     text-align: center;
     padding: 2.4rem;
 }
+
+form{
+    background: #289CE8;
+    background: -moz-linear-gradient(45deg, #289CE8 0%, #1C6EA4 100%);
+    background: -webkit-linear-gradient(45deg, #289CE8 0%, #1C6EA4 100%);
+    background: linear-gradient(45deg, #289CE8 0%, #1C6EA4 100%);
+    padding: 3rem;  
+}
