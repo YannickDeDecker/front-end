@@ -1,0 +1,102 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(pexels-lukas-590022.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    font-size: 16px;
+}
+
+#text-elements{
+    max-width: 800px;
+    margin: auto;
+}
+
+#text-elements h1,h2{
+    color: white;
+    text-align: center;
+}
+
+#text-elements h1{
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+#text-elements h2{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+form{
+    background-color: #19195d;
+    padding: 3rem;
+    color: white;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.box{
+    width: 100%;
+    height: 40px;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+label span{
+    font-size: 0.8rem;
+}
+
+label{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.select select{
+    width: 100%;
+    height: 40px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+option{
+    font-size: 0.8rem;
+}
+
+form div{
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+
+textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+input, select, textarea{
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+button{
+    width: 100%;
+    background-color: #5AC18E;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+

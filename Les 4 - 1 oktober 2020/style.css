@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #f8f8f8;
+}
+
+nav{
+    background-color: #4a597d;
+    height: 3.1rem;
+    display: flex;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 3rem;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+#form{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#form .container{
+    background-color: white;
+    border: 20px solid #f8f8f8;
+    border-radius: 20px;
+    height: 400px;
+    padding: 2rem 20rem;
+}
+
+#form h1{
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid #008080;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+#form form{
+    background-color: #99cccc;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+#form input{
+    border: none;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    width: 100%;
+}
+
+#form label{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.login,.signup{
+    border: none;
+    width: 6rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background-color: white;
+    margin-right: 1rem;
+}
+
+.login:hover,.signup:hover{
+    background-color: #008080;
+    color: white;
+}
+
+footer{
+    background-color: #4a597d;
+    height: 100px;
+    color: white;
+    text-align: center;
+    display: flex;
+}
+
+footer p{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+footer p a{
+    padding: 0 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover{
+    text-decoration: underline;
+}

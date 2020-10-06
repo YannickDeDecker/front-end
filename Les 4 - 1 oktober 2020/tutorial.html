@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/df2786f1d5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="form.php">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="form">
+        <div class="container">
+            <h1>Login Page</h1>
+            <form action="form.php" method="POST" autocomplete="off">
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                    <input type="hidden" name="process" value="1">
+                <button class="login">Login</button><button class="signup">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; Yannick De Decker | 2020</p>
+            <p><a href="#">Disclaimer</a><a href="#">About</a><a href="#">Contact</a></p>
+        </div>
+    </footer>
+</body>
+</html>
