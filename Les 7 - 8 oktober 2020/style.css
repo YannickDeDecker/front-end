@@ -69,8 +69,8 @@ h2{
 }
 
 .btn2:hover{
-    background-color: #d8b2b2;
-    color: black;
+    background-color: #cc9999;
+    color: white;
 }
 
 @media (max-width: 1200px){
