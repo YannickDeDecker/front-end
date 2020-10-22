@@ -50,10 +50,27 @@ var result = string1 + " " + string2;
 
 console.log(result)
 
-//Assignment OPERATORS
+//assignment OPERATORS
 
 //x+=y means result = x + y
 var x = 5;
 var y = 8;
 var result = x+=y;
 console.log(result);
+
+//comparison OPERATORS
+
+var string = "intec";
+var string2 = "intec";
+var comparison = string == string2; //== compares only value
+
+var string3 = 5;
+var string4 = "5";
+var comparison = string3 == string4; // == compares only value
+var comparison = string3 === string4; // === compares both value and data type
+
+var comparison = string3 != string4; // != 
+var comparison = string3 !== string4; // !==
+
+console.log(comparison);
+
