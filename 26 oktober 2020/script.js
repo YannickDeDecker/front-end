@@ -67,9 +67,23 @@ let information = {
     city: "Boortmeerbeek"
 }
 
-function myInformation() {
-    console.log(`My name is ${information.firstName} ${information.lastName} and I am ${information.age} years old`);
-    console.log(`I am born in ${information.birthYear}`);
+let information1 = {
+    firstName: "Erik",
+    lastName: "De Weerdt",
+    age: 34,
+    birthYear: 1986,
+    email: "eriksken@gmail.com",
+    phone: "0487 14 09 39",
+    city: "Boortmeerbeek"
 }
 
-myInformation();
+
+function myInformation1(para1) { 
+    console.log(`My name is ${para1.firstName} ${para1.lastName} and I am ${para1.age} years old.`);
+    console.log(`I was born in ${para1.birthYear}.`);
+    console.log(`Next Year I will turn ${para1.age+=1}.`)
+    console.log(`I live in ${para1.city}.`)
+}
+
+myInformation1(information1);
+myInformation1(information);
