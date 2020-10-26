@@ -17,10 +17,6 @@
 
 // console.log(Number('5')+Number('5'))
 
-
-// let num1 = prompt("Give a number");
-// let num2 = prompt("Give another number");
-
 let input1 = prompt("Give a number");
 let input2 = prompt("Give another number");
 
@@ -33,3 +29,4 @@ function sum(){
 }
 
 sum();
+
