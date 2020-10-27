@@ -75,3 +75,46 @@ function personInfo3(obj){
 }
 
 personInfo3(personalInfo2(personalInfo()));
+
+
+// Confirm and Prompt
+
+let askUser = prompt('Are you admin?', 'no');
+console.log(askUser);
+
+let askAge = confirm('Are you under age 17?', 17);
+
+// if statement
+
+let user = 'admin'
+if(user === 'admin'){
+    console.log('Welcome to Admin Dashboard')
+} else {
+    console.log('Welcome to User Dashboard')
+}
+
+let userName = prompt ('Enter your username');
+
+if(username === 'admin'){
+    alert('Welcome admin!')
+} else {
+    alert('Welcome user!')
+}
+
+let totalProduct = 0;
+
+if(totalProduct <= 0){
+    totalProduct++;
+    console.log(totalProduct);
+}
+
+let count = 0;
+function increment(){
+    if(count <= 0){
+        count++;
+        console.log(count);
+    } else{
+        count--;
+        console.log(count);
+    }
+}
