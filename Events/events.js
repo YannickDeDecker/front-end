@@ -22,3 +22,9 @@ mouseDownHandler
 oncopy
 ondblclick
 onkeydown
+
+
+// selector
+
+let google = document.getElementById('Google');
+google.addEventListener('click', clickHandler);
