@@ -27,11 +27,16 @@
 
  let url = 'https://www.w3schools.com/js.js_string_methods.asp'
  
- //w3schools.com
+ let question = 'w3schools.com';
 
- let sliceUrl = url.slice(8,25);
+//  let sliceUrl = url.slice(8,25);
+//  console.log(sliceUrl);
+
+ let index = url.indexOf(question);
+ let sliceUrl = url.slice(index, index + question.length)
  console.log(sliceUrl);
 
 
  let subUrl = url.substring(8,25);
  console.log(subUrl);
+
