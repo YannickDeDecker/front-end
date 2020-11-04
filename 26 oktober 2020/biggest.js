@@ -1,4 +1,8 @@
 //Find the biggest number
+// let num = [1,2,3,4,5,6,10,22,56,79];
+
+// const max = Math.max.apply(null, num);
+// console.log(max);
 
 let num1 = 50;
 let num2 = 60;
