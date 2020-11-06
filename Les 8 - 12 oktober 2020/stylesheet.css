@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    height: 9rem;
+    background-image: url(pexels-james-wheeler-1571442.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.header-flex{
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo a{
+    padding: 0 2rem;
+    text-decoration: none;
+}
+
+.display-4{
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
