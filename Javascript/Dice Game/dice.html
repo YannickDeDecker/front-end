@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container">
+          <div class="jumbotron">
+              <h1 class="display-3">Dice Game</h1>
+              <p class="lead">Give a number between 1 and 6</p>
+              <div class="form-group">
+                <input type="number" class="form-control" name="random" id="random" aria-describedby="helpId" min = "1" max="6" placeholder="give a number">
+              </div>
+              <hr class="my-2">
+              <p class="lead">
+                  <button class="btn btn-danger btn-lg mt-2" id="shuffle" href="Jumbo action link" role="button">Shuffle</button>
+                  <button class="btn btn-warning btn-lg mt-2" id="reset" href="Jumbo action link" role="button">Reset</button>
+              </p>
+              <div>
+                  <img id="img-dice" class="d-none mt-4" src="" alt="" width="100px">
+              </div>
+              <div id="wrong" class="bg-danger d-none mt-3">
+                <h4 class="text-white text-center p-2">Oh no! You gave the wrong number!</h4>
+              </div>
+              <div id="right" class="bg-success d-none mt-3">
+                <h4 class="text-white text-center p-2">Good Job! You gave the right number!</h4>
+              </div>
+              <div id="nothing" class="bg-secondary d-none mt-3">
+                <h4 class="text-white text-center p-2">Whoops, you didn't give a number</h4>
+              </div>
+          </div>
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <script src="dice.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
