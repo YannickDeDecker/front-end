@@ -14,11 +14,6 @@ function shuffleDice(){
     let userNumber = parseInt(document.getElementById('random').value);
     document.getElementById('img-dice').classList.remove('d-none');
 
-    // if(isNaN(userNumber)){
-    //     document.getElementById('nothing').classList.remove('d-none');
-    //     return;
-    // }
-
     if(randomNumber === 1){
         document.getElementById('img-dice').setAttribute('src','Asset1.png');
     } else if (randomNumber === 2){
