@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Rock, Paper or Scissors</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="container">
+          <div class="jumbotron">
+              <h1 class="display-3">Rock, Paper or Scissors</h1>
+              <p class="lead">Choose one...</p>
+              <p>A player who decides to play rock will beat another player who has chosen scissors ("rock crushes scissors" or sometimes "blunts scissors"), but will lose to one who has played paper ("paper covers rock"); a play of paper will lose to a play of scissors ("scissors cuts paper").</p>
+              <div id="choice" class="row">
+                  <div class="col-2">
+                      <img id="rock" class="img-thumbnail" src="Asset1.png" alt="">
+                  </div>
+                  <div class="col-2">
+                    <img id="paper" class="img-thumbnail" src="Asset2.png" alt="">
+                  </div>
+                  <div class="col-2">
+                    <img id="scissor" class="img-thumbnail" src="Asset3.png" alt="">
+                  </div>
+              </div>
+              <div id="game" class="row d-none">
+                  <div class="col-2">
+                    <img id="player" class="img-thumbnail" src="Asset1.png" alt="">
+                  </div>
+                  <div class="col-1">
+                      <h2 class="text-center pt-5">VS</h2>
+                  </div>
+                  <div class="col-2">
+                    <img id="computer" class="img-thumbnail" src="Asset1.png" alt="">
+                </div>
+                <div id="won" class="col-7 d-none">
+                    <h3 class="text-center pt-5 text-success">Congratulations! You won!</h3>
+                </div>
+                <div id="loss" class="col-7 d-none">
+                    <h3 class="text-center pt-5 text-danger">Whoops! You lost!</h3>
+                </div>
+                <div id="tie" class="col-7 d-none">
+                    <h3 class="text-center pt-5 text-secondary">That's a tie!</h3>
+                </div>
+              </div>
+              <hr class="my-2">
+              <p class="lead">
+                  <button id="shuffle" class="btn btn-primary btn-lg mt-3" role="button">Shuffle</button>
+                  <button id="score" class="btn btn-info btn-lg mt-3" role="button">Score: 0</button>
+              </p>
+          </div>
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <script src="game.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

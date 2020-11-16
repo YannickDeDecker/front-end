@@ -1,25 +1,20 @@
-let maximum = parseInt(prompt('Enter the maximum number!'));
-while (!maximum) {
-    maximum = parseInt(prompt('Enter the maximum number!'));
-}
+const targetNumber = Math.floor(Math.random() * 101);
+const answer = document.getElementById('answer');
 
-const targetNum =  Math.floor(Math.random() * maximum) + 1;
+function guessNumber(){
+    let userGuess = document.getElementById('number').value;
 
-let guess = parseInt(prompt('Enter your first guess.'));
-let attempts = 1;
-
-while (parseInt(guess) !== targetNum){
-    if (guess === 'q') break;
-    attempts++;
-    if(guess > targetNum){
-        guess = prompt('Too high! Enter a new guess.');
+    if(userGuess == ""){
+        answer.innerText = 'Give a number';
+    } else if (targetNumber === parseInt(userGuess)){
+        answer.innerText = 'Congratulations, you guessed right!';
+    } else if (Math.abs(targetNumber-userGuess) <= 5){
+        answer.innerText = 'Wow, very hot! Guess again';
+    } else if (Math.abs(targetNumber-userGuess) <= 15){
+        answer.innerText = 'Getting hot! Guess again';
+    } else if (Math.abs(targetNumber-userGuess) <= 25){
+        answer.innerText = 'Too cold! Guess again';
     } else{
-        guess = prompt('Too low! Enter a new guess.');
+        answer.innerText = 'Freezing! Guess again';
     }
-}
-
-if (guess === 'q'){
-    console.log('OK, you are a quitter!')
-} else {
-    console.log(`You got it! It took you ${attempts} guesses!`);
 }
