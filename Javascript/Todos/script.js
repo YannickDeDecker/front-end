@@ -11,6 +11,7 @@
 //     list.classList.add('bg-secondary');
 // })
 
+let arrayTodo = [];
 
 function styleFunction(){
     let todos = document.querySelectorAll('.list-group-item');
@@ -41,10 +42,31 @@ function addTodo(event){
     let todoList = document.querySelector('.list-group');
     todoList.appendChild(newTodo);
     styleFunction();
+    arrayTodo.push(newTodo);
 }
 
 styleFunction();
 document.querySelector('#addTodo').addEventListener('click', addTodo);
+
+
+function removeTodo(event){
+    event.preventDefault()
+    let parent = event.target.parentElement.parentElement;
+    parent.remove();
+}
+
+document.querySelectorAll('.fa-remove').forEach(function(item){
+    item.addEventListener('click', removeTodo);
+})
+
+
+
+
+
+
+
+
+
 
 // todos.forEach((todo,index) => todo.classList.add(index % 2 === 0 ? 'bg-warning': 'bg-secondary'))
 
