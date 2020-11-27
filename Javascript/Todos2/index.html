@@ -46,55 +46,15 @@
                 </div>
 
                 <hr>
-                <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between">
-                        HTML
-                        <a href="#" class="delete-item">
-                            <i class="fa fa-remove"></i>
-                        </a>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        CSS
-                        <a href="#" class="delete-item">
-                            <i class="fa fa-remove"></i>
-                        </a>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        Bootstrap
-                        <a href="#" class="delete-item">
-                            <i class="fa fa-remove"></i>
-                        </a>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        Javascript
-                        <a href="#" class="delete-item">
-                            <i class="fa fa-remove"></i>
-                        </a>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        jQuery
-                        <a href="#" class="delete-item">
-                            <i class="fa fa-remove"></i>
-                        </a>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        Angular
-                        <a href="#" class="delete-item">
-                            <i class="fa fa-remove"></i>
-                        </a>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        React
-                        <a href="#" class="delete-item">
-                            <i class="fa fa-remove"></i>
-                        </a>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                       Vue.js
-                        <a href="#" class="delete-item">
-                            <i class="fa fa-remove"></i>
-                        </a>
-                    </li>
+                <ul id="todoList" class="list-group">
+                    <template id="todoTemplate">
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>List Item</span>
+                            <a href="#" class="delete-item">
+                                <i class="fa fa-remove"></i>
+                            </a>
+                        </li>
+                    </template>
                 </ul>
                 <hr>
                 <a id="clear-todos" class="btn btn-dark" href="#">Delete All Todos</a>
