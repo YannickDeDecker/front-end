@@ -5,21 +5,6 @@ let questionNumberOne;
 let questionNumberTwo;
 let index;
 
-// let operators = [
-//     {
-//         func: (input1, input2) => input1 + input2,
-//         operator: '+'
-//     },
-//     {
-//         func: (input1, input2) => input1 - input2,
-//         operator: '-'
-//     },
-//     {
-//         func: (input1, input2) => input1 * input2,
-//         operator: '*'
-//     }
-// ]
-
 function Operator(func, operator){
     this.func = func;
     this.operator = operator;
@@ -56,7 +41,7 @@ function checkAnswer(){
     document.getElementById('incorrect').innerText = scoreIncorrect;
 
     resetFunction(); 
-  }
+}
 
 document.getElementById('check').addEventListener("click", checkAnswer);
 resetFunction();
