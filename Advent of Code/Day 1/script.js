@@ -201,13 +201,30 @@ let str = `1511
 
 let arr = str.split("\n");
 
+//two numbers
+
+// for(let i = 0; i < arr.length; i++){
+//     for(let j = i + 1; j < arr.length; j++){
+//         if(parseInt(arr[i]) + parseInt(arr[j]) === 2020){
+//             console.log(arr[i]);
+//             console.log(arr[j]);
+//             let result = parseInt(arr[i]) * parseInt(arr[j]);
+//             console.log(result);
+//         }
+//     }
+// }
+
+//three numbers
+
 for(let i = 0; i < arr.length; i++){
     for(let j = i + 1; j < arr.length; j++){
-        if(parseInt(arr[i]) + parseInt(arr[j]) === 2020){
-            console.log(arr[i]);
-            console.log(arr[j]);
-            let result = parseInt(arr[i]) * parseInt(arr[j]);
-            console.log(result);
-        }
+        for(let k = j + 1; k < arr.length; k++){
+            if(parseInt(arr[i])+parseInt(arr[j])+parseInt(arr[k]) === 2020){
+                console.log(arr[i]);
+                console.log(arr[j]);
+                console.log(arr[k]);
+                let result = parseInt(arr[i])*parseInt(arr[j])*parseInt(arr[k]);
+                console.log(result);
+            }}
     }
 }
