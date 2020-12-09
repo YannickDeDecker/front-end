@@ -1028,8 +1028,8 @@ function isValid(input){
     let letter = input[indexColon - 1];
     let password = input.substring(indexColon+2);
     let range = input.substring(0, indexColon-2).split('-');
-    let num1 = parseInt(range[0]);
-    let num2 = parseInt(range[1]);
+    let num1 = parseInt(range[0]) - 1;
+    let num2 = parseInt(range[1]) - 1;
     if(password[num1] === letter && password[num2] === letter){
         return false
     } else if (password[num1] !== letter && password[num2] !== letter){
@@ -1042,6 +1042,7 @@ function isValid(input){
 
 let counter = 0;
 for(let i = 0; i < arr.length; i++){
+    // console.log(`${arr[i]} = ${isValid(arr[i])}`)
    if(isValid(arr[i])){
        ++counter;
    }
