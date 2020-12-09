@@ -1002,21 +1002,42 @@ let input = `3-6 s: ssdsssss
 let arr = input.split("\n");
 console.log(arr);
 
+//part 1
+
+// function isValid(input){
+//     let indexColon = input.indexOf(':');
+//     let letter = input[indexColon-1];
+//     let password = input.substring(indexColon+2);
+//     let range = input.substring(0, indexColon-2).split('-');
+//     let min = parseInt(range[0]);
+//     let max = parseInt(range[1]);
+//     let count = password.split(letter).length - 1;
+//     if (password.includes(letter) && count >= min && count <= max) {
+//         console.log(true)
+//         return true
+//     } else {
+//         console.log(false)
+//         return false
+//     }
+// }
+
+//part 2
+
 function isValid(input){
     let indexColon = input.indexOf(':');
-    let letter = input[indexColon-1];
+    let letter = input[indexColon - 1];
     let password = input.substring(indexColon+2);
     let range = input.substring(0, indexColon-2).split('-');
-    let min = parseInt(range[0]);
-    let max = parseInt(range[1]);
-    let count = password.split(letter).length - 1;
-    if (password.includes(letter) && count >= min && count <= max) {
-        console.log(true)
-        return true
-    } else {
-        console.log(false)
+    let num1 = parseInt(range[0]);
+    let num2 = parseInt(range[1]);
+    if(password[num1] === letter && password[num2] === letter){
         return false
+    } else if (password[num1] !== letter && password[num2] !== letter){
+        return false
+    } else {
+        return true
     }
+
 }
 
 let counter = 0;
@@ -1027,3 +1048,5 @@ for(let i = 0; i < arr.length; i++){
 }
 
 console.log(counter);
+
+
