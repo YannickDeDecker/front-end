@@ -334,12 +334,13 @@ while(j < arr.length){
     if(column === '#'){
         ++counter;
     }
-    i += 3;
-    ++j;
+    i += 1;
+    j += 2;
     
-    if(i > row.length){
+    if(i >= row.length){
         i = i - row.length;
     }
 };
 
 console.log(counter);
+console.log(64*284*71*68*40);
