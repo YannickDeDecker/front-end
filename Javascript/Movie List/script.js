@@ -1,3 +1,5 @@
+//ENTER A NEW LIST ITEM TO THE PAGE AND LOCAL STORAGE
+
 let movieName = $('#title');
 let director = $('#director');
 let coverLink = $('#url');
@@ -29,5 +31,24 @@ function newMovie(event){
     movie.appendMovie();
 }
 
-
 $('#add-movie').click(newMovie);
+
+//REMOVE INDIVIDIUAL ELEMENTS
+
+
+
+$('#delete-film').click(removeItem);
+
+//REMOVE ALL ELEMENTS
+
+function removeAllItems(event){
+    event.preventDefault();
+    movieArray = [];
+    window.localStorage.removeItem('MovieList');
+    const myNode = document.getElementById("films");
+    while (myNode.firstChild) {
+      myNode.removeChild(myNode.lastChild);
+    }
+}
+
+$('#clear-films').click(removeAllItems);
