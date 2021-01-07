@@ -6,3 +6,5 @@ fetch(apiUrl)
     return user.address.city === 'McKenziehaven'
 }))
 .then(data => console.log(data))
+
+

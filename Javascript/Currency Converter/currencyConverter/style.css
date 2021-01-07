@@ -1,0 +1,52 @@
+.container {
+    width: 400px;
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+form {
+    height: 40px;
+    display: flex;
+}
+
+input, select {
+    border: 1px solid #ccc;
+}
+
+#amount {
+    max-width: 25%;
+    padding: 0 0 0 15px;
+}
+
+form select {
+    flex: 1;
+    padding-left: 8px;
+}
+
+form input[type="submit"] {
+    flex: 1;
+}
+
+.results {
+    margin-top: 18px;
+    height: 40px;
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+#result {
+    flex: 1 1 auto;
+    padding: 0 0 0 15px;
+    background: #fff;
+    margin: 0px 0 0px 0;
+    padding-top: 10px;
+}
+
+#symbol {
+    max-width: 25%;
+    text-align: center;
+}
+
+
