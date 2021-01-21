@@ -31,7 +31,22 @@ app.listen(PORT, () =>{
 //SET STATIC FOLDER
 app.use(express.static(path.join(__dirname, 'public')));
 
-//ROUTE DEFINITION
-app.get('/api/members', (req,res) =>{
-    res.json(members);
+//ROUTE DEFINITION - ALL MEMBERS
+// app.get('/api/members', (req,res) =>{
+//     res.json(members);
+// })
+
+//GET SINGLE MEMBER
+app.get('/members/:id', (req,res) =>{
+    const found = members.some((member) =>{
+        return member.id === parseInt(req.params.id)
+    })
+
+    if(found){
+        res.json(members.filter((member) => {
+            return member.id === parseInt(req.params.id)
+        }))
+    } else {
+        res.status(400).json({msg: `No Member with the ID of ${req.params.id}`})
+    }
 })

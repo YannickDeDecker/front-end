@@ -1,0 +1,29 @@
+body{
+    background-color: aliceblue;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.showcase-image{
+    width: 100vw;
+    height: 500px;
+    background-image: url('pexels-christina-morillo-1181467.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    background-color: #5f90ae;
+    padding: 5px;
+    color: white;
+    width: 300px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
