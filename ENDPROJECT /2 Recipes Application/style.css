@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;900&display=swap');
+
+:root{
+    --dark-bg-color: #161d2f;
+    --light-bg-color: #4b5366;
+    --light-orange: #fbbe88;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.9);
+    background-image: url('./images/Background.png');
+}
+
+#search-bar{
+    border: none;
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 15px;
+    width: 400px;
+}
+
+#search-bar::placeholder{
+    color: var(--dark-bg-color);
+}
+
+.navbar-brand{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.fa-pepper-hot{
+    color: var(--light-orange);
+}
+
+#col-left{
+    background: white;
+    color: black;
+    border-radius: 15px;
+    padding: 35px 20px;
+}
+
+#col-right{
+    padding: 35px 50px;
+}
+
+#col-right h1{
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+#col-right h2{
+    color: var(--light-orange);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+
+#col-right h3{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: 1.35rem;
+}
+
+#main-recipe-container{
+    margin-top: 5rem;
+}
