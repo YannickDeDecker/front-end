@@ -42,6 +42,64 @@ body{
     color: var(--light-orange);
 }
 
+#filter{
+    background-color: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 75px;
+}
+
+.input-group{
+    margin: 0 10px;
+}
+
+.input-group-text{
+    border: none;
+    background-color: white;
+    color: var(--light-bg-color)
+}
+
+.form-control{
+    background-color: rgba(255,255,255,0.4);
+    border: none;
+}
+
+#h2-homepage{
+    margin-top: 50px;
+}
+
+.grid{
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    padding: 25px;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+
+.grid img{
+    width: 100%;
+}
+
+.grid button{
+    width: 100%;
+    margin-top: 15px;
+    background-color: var(--light-orange);
+    color: var(--dark-bg-color);
+    padding: 10px 20px;
+    border: none;
+}
+
+.grid h2{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+/* Recipes Pagina */
+
 #col-left{
     color: black;
 }
