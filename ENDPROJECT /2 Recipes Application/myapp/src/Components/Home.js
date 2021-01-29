@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Navbar from './Navbar'
 import Filter from './Filter'
 import CardContainer from './CardContainer'
+import Showcase from './Showcase'
 
 class Home extends Component {
     render() {
@@ -9,7 +10,7 @@ class Home extends Component {
             <div>
                 <Navbar/>
                 <main>
-                    <Filter/>
+                    <Showcase/>
                     <CardContainer/>
                 </main>
             </div>
