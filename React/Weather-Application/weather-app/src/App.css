@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;700;900&display=swap');
+
+*{
+  font-family: 'Raleway', sans-serif;
+  color: #4a4c71;
+}
+
 .App {
   text-align: center;
 }
@@ -13,15 +20,11 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App{
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);   
+  padding: 4rem 1rem;
+  min-height: 100vh;
 }
 
 .App-link {
@@ -30,22 +33,24 @@
 
 .img-circle{
   border-radius: 50%;
-  background-color: #b0e0e6;
+  background-color: rgba(255,255,255,0.2);
   margin-bottom: 20px;
 }
 
-h1 span{
-  color: #b0e0e6;
+h1 {
+  color: #e2de95;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 6rem;
 }
 
 .bg-container{
-  background-color: #b0e0e6;
+  background-color: rgba(255,255,255,0.2);
   padding: 20px;
   color: black;
   border-radius: 15px;
-  width: 500px;
+  max-width: 750px;
   margin: 0 auto;
-  margin-bottom: 100px;
 }
 
 p span{
@@ -58,10 +63,15 @@ p span{
   margin: 0 auto;
 }
 
-.lead{
-  width: 750px;
+label{
+  font-weight: 700;
+
+}
+
+.lead-text{
+  max-width: 750px;
   margin: 0 auto;
-  font-size: 12px;
+  font-size: 16px;
   margin-bottom: 20px;
 }
 

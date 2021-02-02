@@ -22,7 +22,7 @@ updateWeather= (e) => {
     return
   } 
   
-  fetch(`http://api.openweathermap.org/data/2.5/weather?id=${e.target.value}&appid=0f353bcfac3a777a9f3aa79d952733eb`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?id=${e.target.value}&appid=0f353bcfac3a777a9f3aa79d952733eb`)
   .then(response => response.json())
   // .then(json => console.log(json))
   .then(json => {
@@ -30,17 +30,17 @@ updateWeather= (e) => {
     this.setState({
       city: e.target.value,
       data: json,
-      imageSrc: `http://openweathermap.org/img/wn/${json.weather[0].icon}@2x.png`
+      imageSrc: `https://openweathermap.org/img/wn/${json.weather[0].icon}@2x.png`
     })
   })
 }  
 
 render() {
     return (
-      <div className="App bg-dark p-4 text-white">
+      <div className="App">
         <Container>
-        <h1 className="mb-4">Current <span>Weather</span> Application</h1>
-        <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla enim enim, cursus faucibus vehicula ut, lacinia quis odio. Curabitur sagittis mi at risus consequat pharetra. In feugiat nec est a finibus. Vestibulum leo diam, cursus id ullamcorper at, consequat malesuada metus. Duis tempor faucibus diam, non euismod dolor cursus nec.</p>
+        <h1 className="mb-4">Current Weather Application</h1>
+        <p className="lead-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla enim enim, cursus faucibus vehicula ut, lacinia quis odio. Curabitur sagittis mi at risus consequat pharetra. In feugiat nec est a finibus. Vestibulum leo diam, cursus id ullamcorper at, consequat malesuada metus. Duis tempor faucibus diam, non euismod dolor cursus nec.</p>
         <FormGroup>
             <Label for="exampleSelect">Choose a city:</Label>
              <Input onChange={this.updateWeather} type="select" name="select" id="exampleSelect">
@@ -66,7 +66,7 @@ render() {
                 <option value="2784604">Vilvoorde</option>
              </Input>
         </FormGroup>
-        <h1>{this.state.data.name}</h1>
+        <h2>{this.state.data.name}</h2>
         <img className="img-circle" src={this.state.imageSrc}></img>
         <div className="bg-container">
         <p><span>Weather:</span> {this.state.data.weather[0].main}</p>
