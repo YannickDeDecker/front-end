@@ -5,7 +5,6 @@ import fetch from 'node-fetch'
 
 class WeatherApplication extends Component {
   componentDidMount() {
-    
 }
 
 state = {
@@ -40,22 +39,29 @@ render() {
     return (
       <div className="App bg-dark p-4 text-white">
         <Container>
-        <h1>Weather Application</h1>
+        <h1 className="mb-4">Current <span>Weather</span> Application</h1>
         <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla enim enim, cursus faucibus vehicula ut, lacinia quis odio. Curabitur sagittis mi at risus consequat pharetra. In feugiat nec est a finibus. Vestibulum leo diam, cursus id ullamcorper at, consequat malesuada metus. Duis tempor faucibus diam, non euismod dolor cursus nec.</p>
         <FormGroup>
             <Label for="exampleSelect">Choose a city:</Label>
              <Input onChange={this.updateWeather} type="select" name="select" id="exampleSelect">
                 <option value="">--Choose Option--</option>
+                <option value="2803073">Aarlen</option>
                 <option value="2803138">Antwerpen</option>
+                <option value="2801483">Boortmeerbeek</option>
                 <option value="2800931">Brugge</option>
                 <option value="3337389">Brussel</option>
+                <option value="2800481">Charleroi</option>
                 <option value="2797671">Genk</option>
                 <option value="2797656">Gent</option>
+                <option value="2796696">Halle</option>
                 <option value="2754779">Hasselt</option>
                 <option value="2794055">Kortrijk</option>
                 <option value="2792482">Leuven</option>
                 <option value="2792413">Luik</option>
+                <option value="2791537">Mechelen</option>
+                <option value="2790471">Namen</option>
                 <option value="2789787">Oostende</option>
+                <option value="2786578">Sint-Niklaas</option>
                 <option value="2785141">Turnhout</option>
                 <option value="2784604">Vilvoorde</option>
              </Input>
