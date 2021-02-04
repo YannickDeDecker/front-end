@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;900&display=swap');
+
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.homepage{
+  background-image: url('./pexels-pixabay-261577.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage h1{
+  margin: 0;
+  padding-top: 50px;
+  font-size: 55px;
+}
+
+.homepage button{
+  background-color: #00ced1;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: white;
+  font-size: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.homepage button:hover{
+  background-color: #009c9e;
+}
+
+.homepage button:active{
+  transform: scale(1.05);
+  outline: none;
+}
+
+.homepage button:focus{
+  outline: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+nav{
+  background-color: #00ced1;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul li{
+  padding: 15px;
+}
+
+nav ul li:hover{
+  background-color: #d10300;
+}
+
+.nav-link{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.contact-page{
+  background-color:ivory;
+  height: 100vh;
+}
+
+.contact-page h1{
+  margin: 0;
+  padding: 20px 0;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.img-one{
+  margin: 10px auto;
+  height: 300px;
+  max-width: 500px;
+  background-image: url('./pexels-kaboompics-com-6224.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-two{
+  margin: 10px auto;
+  height: 300px;
+  max-width: 500px;
+  background-image: url('./pexels-mikechie-esparagoza-1601773.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-three{
+  margin: 10px auto;
+  height: 300px;
+  max-width: 500px;
+  background-image: url('./pexels-tim-mossholder-942317.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-four{
+  margin: 10px auto;
+  height: 300px;
+  max-width: 500px;
+  background-image: url('./pexels-toa-heftiba-şinca-1194420.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 24px;
+}
+
+.portfolio-page, .about-page, .contact-page, .blog-page{
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+
+.portfolio-page h1, .blog-page h1{
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.profile-picture{
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  background-image: url(./profile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-page h1, .contact-page h1{
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contact-btn, .submit-btn{
+  background-color:#d10300;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.contact-btn:hover, .submit-btn:hover{
+  background-color: #7d0100;
+}
+
+.contact-btn:active, .submit-btn:active{
+  transform: scale(1.05);
+  outline: none;
+}
+
+.contact-btn:focus, .submit-btn:focus{
+  outline: none;
+}
+
+form input{
+  border: none;
+  height: 25px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+textarea{
+  border: none;
+  height: 75px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

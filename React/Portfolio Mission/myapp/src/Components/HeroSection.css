@@ -1,0 +1,11 @@
+.hero-container{
+    background-image: url('./pexels-mikechie-esparagoza-1601773.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: column;
+    align-items: center;
+    object-fit: contain;
+}
