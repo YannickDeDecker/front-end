@@ -10,21 +10,9 @@ import NavigationBar from './Components/NavigationBar'
 import Contact from './Pages/Contact';
 import About from './Pages/About';
 import Portfolio from './Pages/Portfolio';
+import Article from './Pages/Article';
 
 export default class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = { data: [] };
-  }
-  
-  componentDidMount() {
-    // fetch('https://jsonplaceholder.typicode.com/posts')
-    // .then(res => res.json())
-    // .then(json => {
-    //   console.log(json)
-    //   this.setState({posts:json});
-    // });
-  }
 
   render() {
   return (
@@ -38,6 +26,7 @@ export default class App extends Component {
         <Route path='/blog' component={Blog} />
         <Route path='/portfolio' component={Portfolio} />
         <Route path='/contact' component={Contact} />
+        <Route path='/article/:id' component={Article} />
       </Router>
     </div>
   );
