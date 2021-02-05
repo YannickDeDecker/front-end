@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
-import Navbar from './Navbar'
-import Filter from './Filter'
-import CardContainer from './CardContainer'
-import Showcase from './Showcase'
+import Filter from '../Components/Filter'
+import CardContainer from '../Components/CardContainer'
+import Showcase from '../Components/Showcase'
 
 class Home extends Component {
     render() {
         return (
             <div>
-                <Navbar/>
                 <main>
                     <Showcase/>
                     <CardContainer/>

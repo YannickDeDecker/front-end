@@ -4,6 +4,7 @@
     --dark-bg-color: #161d2f;
     --light-bg-color: #4b5366;
     --light-orange: #fbbe88;
+    --light-green: #569E78;
 }
 
 *{
@@ -16,8 +17,7 @@ body{
     font-weight: 400;
     color: rgba(255,255,255,0.9);
     background-image: url('./Images/Background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
     background-position: center;
 }
 
@@ -27,7 +27,7 @@ body{
     background-color: rgba(255,255,255,0.2);
     border-radius: 15px;
     width: 400px;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 #search-bar::placeholder{
@@ -41,9 +41,14 @@ body{
 }
 
 .nav-link{
-    font-size: 20px;
+    font-size: 14px;
     text-transform: uppercase;
     margin: 0 10px;
+}
+
+.nav-item{
+    width: 120px;
+    text-align: center;
 }
 
 .active{
@@ -117,7 +122,7 @@ body{
 .grid button{
     width: 100%;
     margin-top: 15px;
-    background-color: var(--light-orange);
+    background-color: var(--light-green);
     color: var(--dark-bg-color);
     padding: 10px 20px;
     border: none;

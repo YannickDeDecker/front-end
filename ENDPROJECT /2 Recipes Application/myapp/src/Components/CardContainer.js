@@ -1,31 +1,39 @@
-import React, { useState } from 'react'
+import React, { Component, setState, useEffect, useState } from 'react';
+import {Link} from "react-router-dom";
 
-const CardContainer =() => {
-    const [recipes, setRecipes] = useState([
-       { name: "Pasta Puttanesca", id: 1},
-       { name: "Pasta Vongole", id: 2},
-       { name: "Spaghetti Bolognaise", id: 3},
-       { name: "Pasta Pesto", id: 4},
-       { name: "Pasta Vongole", id: 5},
-       { name: "Spaghetti Bolognaise", id: 6}
-    ])
+export default class CardContainer extends Component {
+    constructor(props){
+        super(props);
+        this.state = { recipes: [] };
+    }
 
-    return (
-        <div>
-            <div className="container">
-                <div className="row">
-                    {recipes.map(recipe => (
-                    <div className="grid col-md-auto mr-3 mb-3" key={recipe.id}>
-                        <div className="card-container">
-                            <h2>{recipe.name}</h2>
-                            <button>Klik voor recept</button>
-                        </div>
+    componentDidMount(){
+        fetch('./recipes.json')
+            .then(data => data.json())
+            .then(json => this.setState({recipes:json.recipes}))
+    }
+
+    render() {
+        return(
+            <div>
+                <div className="container">
+                    <div className="row">
+                        {
+                         this.state.recipes.map((item, i) => {
+                            return (
+                                <div className="grid col-md-auto mr-3 mb-3">
+                                    <div className="card-container">
+                                        <h2>{item.name}</h2>
+                                        <img src={item.imgmain}></img>
+                                        <button><Link key={i} to={`/article/${item.id}`}>Klik voor recept</Link></button>
+                                    </div>
+                                </div>
+                                )
+                            })
+                        }
                     </div>
-                    ))}
-                </div>
-            </div>
-        </div>
-    )
- }
-
-export default CardContainer
+                    </div>
+                    </div>
+                    )
+                }
+            }
