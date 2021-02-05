@@ -17,12 +17,22 @@ export default class Blog extends Component {
 
     render() {
         return (
-        <div>
+        <div className="blog-page">
             <h1>Blog page</h1>
             {
                 this.state.posts.map((item, i) => {
                     return (
-                        <Link key={i} to={`/article/${item.id}`} style={{ 'display': 'block' }}>{item.title}</Link>
+                        <Link key={i} to={`/article/${item.id}`} style={{ 
+                            'display': 'block',
+                            'backgroundColor': '#ff7f50',
+                            'margin' : '0 auto',
+                            'maxWidth' : '650px',
+                            'marginBottom' : '10px',
+                            'padding' : '10px',
+                            'color' : 'white',
+                            'fontWeight' : 'bold',
+                            'textDecoration' : 'none'
+                        }}>{`${item.id}: ${item.title}`}</Link>
                     )
                 })
             }

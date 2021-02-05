@@ -1,5 +1,7 @@
 import React, { setState, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import Image from 'react-random-image'
+import {Link} from 'react-router-dom'
 
 
 function Article() {
@@ -23,10 +25,13 @@ function Article() {
         )
     } else {
         return (
-            <div>
-                <h1>Article Detail page!!!</h1>
-                <h2>Article ID is {id}</h2>
-                <h3 style={{'display':'block'}}>Article TITLE: {post.title}</h3>
+            <div className="article-page">
+                <button className="return"><Link className="nav-link" to="/blog">Return to blog page</Link></button>
+                <h2>Article nr {id}</h2>
+                <h3>Auteur: Yannick De Decker</h3>
+                <h1>{post.title}</h1>
+                <Image width={500} height={300}/>
+                {/* <h3 style={{'display':'block'}}>Article TITLE: {post.title}</h3> */}
                 <p>{post.body}</p>
             </div>
         )
