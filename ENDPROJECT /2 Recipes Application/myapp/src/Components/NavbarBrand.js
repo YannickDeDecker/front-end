@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faHamburger } from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-router-dom'
 
 export default class NavbarBrand extends Component {
-    element = <FontAwesomeIcon className="icon" icon={faCoffee}/>
+    element = <FontAwesomeIcon className="icon" icon={faHamburger}/>
     render() {
         return (
             <div>

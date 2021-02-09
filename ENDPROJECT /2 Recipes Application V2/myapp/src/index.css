@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;900&display=swap');
+
+:root{
+    --dark-bg-color: #161d2f;
+    --light-bg-color: #4b5366;
+    --light-orange: #fbbe88;
+    --light-green: #569E78;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.9);
+    background-image: url('./Images/Background.png');
+    background-repeat: repeat;
+    background-position: center;
+}
+
+#search-bar{
+    border: none;
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 15px;
+    width: 400px;
+    margin-left: 80px;
+}
+
+#search-bar::placeholder{
+    color: var(--dark-bg-color);
+}
+
+.navbar-brand{
+    font-weight: 900;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+.nav-item{
+    width: 120px;
+    text-align: center;
+}
+
+.active{
+    background-color: var(--light-orange);
+    padding: 8px 12px;
+    border-radius: 15px;
+    color: var(--dark-bg-color);
+}
+
+.icon{
+    color: var(--light-orange);
+}
+
+#showcase-container{
+    background-image: url('./Images/pexels-lumn-604969.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    max-width: 100%;
+    height: 500px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    overflow-x: hidden;
+}
+
+#filter{
+    background-color: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 75px;
+}
+
+#filter-container{
+    margin-top: 5rem;
+}
+
+.input-group{
+    margin: 0 10px;
+}
+
+.input-group-text{
+    border: none;
+    background-color: white;
+    color: var(--light-bg-color)
+}
+
+.form-control{
+    background-color: rgba(255,255,255,0.4);
+    border: none;
+}
+
+#h2-homepage{
+    font-size: 1.5rem;
+}
+
+.grid{
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    padding: 25px;
+    /* margin: 0 10px; */
+    border-radius: 15px;
+}
+
+.grid img{
+    width: 100%;
+}
+
+.grid button{
+    width: 100%;
+    margin-top: 15px;
+    background-color: var(--light-green);
+    color: var(--dark-bg-color);
+    padding: 10px 20px;
+    border: none;
+}
+
+.grid h2{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+/* Recipes Pagina */
+
+#col-left{
+    color: black;
+}
+
+#white-background{
+    background: white;
+    border-radius: 15px;
+    padding: 35px 20px;
+}
+
+#col-right{
+    padding: 35px 50px;
+    padding-right: 250px;
+}
+
+#col-right img{
+    position: absolute;
+    width: 20%;
+    right: 110px;
+    top: 130px;
+}
+
+#col-right h1{
+    font-weight: 900;
+    line-height: 4rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+#col-right h2{
+    color: var(--light-orange);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+
+#col-right h3{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: 1.35rem;
+}
+
+#col-right p span{
+    color: var(--light-orange);
+    font-weight: 900;
+    margin-right: 10px;
+
+}
+
+#col-left h3{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: 1.35rem;
+    color: var(--dark-bg-color);
+}
+
+#main-recipe-container{
+    margin-top: 5rem;
+}
+
+#default-list{
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-bg-color);
+    border-radius: 15px;
+    color: white;
+}
+
+#default-list p{
+    margin: 10px 10px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#ingredients-list{
+    list-style: none;
+}
+
+#ingredients-list li{
+    margin: 10px 0;
+}
+
+.fa-check-circle, .fa-clock, .fa-award{
+    color: var(--light-orange);
+    margin-right: 10px;
+}

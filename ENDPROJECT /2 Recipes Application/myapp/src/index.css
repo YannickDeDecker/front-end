@@ -137,19 +137,62 @@ body{
 
 /* Recipes Pagina */
 
+/* Ingredients Column */
+
+#tag-list{
+    display: flex;
+    list-style: none;
+    color: var(--light-green);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+#tag-list li{
+    font-size: 0.75rem;
+}
+
+#tag-list li:not(:nth-of-type(1))::before{
+    content: '|';
+    margin-left: 5px;
+}
+
+/* Instructions List */
+
+#instructions-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#instructions-list li{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px dotted rgba(255,255,255,0.4);
+}
+
+#instructions-list li span{
+    color: var(--light-green);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+
 #col-left{
-    color: black;
+    color: var(--dark-bg-color);
 }
 
 #white-background{
     background: white;
     border-radius: 15px;
-    padding: 35px 20px;
+    padding: 35px 20px 35px 20px;
 }
 
 #col-right{
-    padding: 35px 50px;
-    padding-right: 250px;
+    padding: 25px 25px;
+    padding-right: 100px;
 }
 
 #col-right img{
@@ -167,10 +210,12 @@ body{
 }
 
 #col-right h2{
-    color: var(--light-orange);
+    color: var(--light-green);
     font-size: 0.7rem;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
+    margin-bottom: 1rem;
 }
 
 #col-right h3{
@@ -181,7 +226,7 @@ body{
 }
 
 #col-right p span{
-    color: var(--light-orange);
+    color: var(--light-green);
     font-weight: 900;
     margin-right: 10px;
 
@@ -192,7 +237,7 @@ body{
     margin-bottom: 1rem;
     font-weight: 900;
     font-size: 1.35rem;
-    color: var(--dark-bg-color);
+    color: var(--dark-bg-color)
 }
 
 #main-recipe-container{
@@ -216,13 +261,21 @@ body{
 
 #ingredients-list{
     list-style: none;
+    margin: 0 10px 0;
+    padding: 0;
 }
 
 #ingredients-list li{
     margin: 10px 0;
+    font-size: 0.95rem;
 }
 
-.fa-check-circle, .fa-clock, .fa-award{
+.fa-clock, .fa-award{
     color: var(--light-orange);
-    margin-right: 10px;
+    margin: 0;
+}
+
+.fa-check-circle{
+    color: var(--light-green);
+    margin: 0 5px 0 5px;
 }

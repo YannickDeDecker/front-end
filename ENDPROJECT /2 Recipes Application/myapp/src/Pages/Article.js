@@ -1,19 +1,24 @@
 import React, { setState, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import {Link} from 'react-router-dom'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheckCircle, faClock, faAward } from '@fortawesome/free-solid-svg-icons'
 
 function Article() {
     const [isLoading, setLoading] = useState(true);
-    const [recipe, setPost] = useState();
+    const [recipe, setRecipe] = useState();
+    const element = <FontAwesomeIcon className="icon" icon={faCheckCircle}/>
+    const elementTwo = <FontAwesomeIcon className="icon" icon={faClock}/>
+    const elementThree = <FontAwesomeIcon className="icon" icon={faAward}/>
 
     let {id} = useParams();
 
     useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+        fetch('../recipes.json')
             .then(res => res.json())
             .then(json => {
-                setPost(json);
+                let r = json.recipes.filter(item => item.id == id);
+                console.log(r);
+                setRecipe(r[0]);
                 setLoading(false);
             })
     }, [])
@@ -25,38 +30,36 @@ function Article() {
     } else {
         return (
             <div>
-        <div class="container">
-            <div id="main-recipe-container" class="row">
-                <div id="col-left" class="col-md-3">
+        <div className="container">
+            <div id="main-recipe-container" className="row">
+                <div id="col-left" className="col-md-3">
                   <div id="white-background">
-                    <div id="default-list" class="d-flex">
-                      <p><i class="far fa-clock"></i> {recipe.time}</p>
-                      <p><i class="fas fa-award"></i> Beginner</p>
+                    <div id="default-list" className="d-flex">
+                      <p>{elementTwo} {recipe.time}</p>
+                      <p>{elementThree} {recipe.difficulty}</p>
                   </div>
                   <h3>Ingrediënten</h3>
                   <ul id="ingredients-list">
-                      <li><i class="fas fa-check-circle"></i> Spaghetti</li>
-                      <li><i class="fas fa-check-circle"></i> 2 tomaten</li>
-                      <li><i class="fas fa-check-circle"></i> Ansjovis</li>
-                      <li><i class="fas fa-check-circle"></i> Parmezaanse kaas</li>
-                      <li><i class="fas fa-check-circle"></i> Sjalot</li>
-                      <li><i class="fas fa-check-circle"></i> Knoflook</li>
-                      <li><i class="fas fa-check-circle"></i> Steelkappertjes</li>
-                      <li><i class="fas fa-check-circle"></i> Bladpeterselie</li>
+                    {recipe.ingredients.map((item, index) => (
+                            <li key={index}> {element} {item} </li>
+                    ))}
                   </ul>
                   </div>
                 </div>
-                <div id="col-right" class="col-md-9">
-                  <img src="./images/pasta.png" alt="" srcset=""></img>
-                    <h2>pasta | italiaans | vegetarisch | vis</h2>
+                <div id="col-right" className="col-md-9">
+                  <img src={recipe.imgsub} alt="" srcset=""></img>
+                  <ul id="tag-list">
+                    {recipe.tags.map((item, index) => (
+                            <li key={index}> {item}</li>
+                    ))}
+                  </ul>
                     <h1>{recipe.name}</h1>
                     <h3>Instructies</h3>
-                    <p><span>1</span>Pel de sjalotten, snij ze middendoor en snipper ze vervolgens in dunne halve ringen.</p>
-                    <p><span>2</span>Verwijder het steeltje van de grote kappers en hak ze grof. Deze steelkappers geven de pasta een frisse toets.</p>
-                    <p><span>3</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, cupiditate!</p>
-                    <p><span>4</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eos tempora explicabo, ratione aut quasi consectetur?</p>
-                    <p><span>5</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, cupiditate!</p>
-                    <p><span>6</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eos tempora explicabo, ratione aut quasi consectetur?</p>
+                    <ul id="instructions-list">
+                    {recipe.instructions.map((item, index) => (
+                            <li key={index}> <span>{index+1}</span> {item} </li>
+                    ))}
+                  </ul>
                 </div>
             </div>
         </div>
