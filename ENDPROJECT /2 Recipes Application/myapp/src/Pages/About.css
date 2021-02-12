@@ -1,0 +1,55 @@
+.profile{
+    background-image: url('../Images//Profile-Pic.png');
+    background-repeat: no-repeat;
+    background-size: 415px;
+    background-position: bottom;
+}
+
+.row-one{
+    margin-top: 5rem;
+}
+
+h1{
+    font-weight: 900;
+    line-height: 4rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+h2{
+    margin-bottom: 2rem;
+}
+
+p{
+    font-weight: 200;
+}
+
+.row-two{
+    background: rgba(255,255,255,0.4);
+    border-radius: 20px;
+    margin-top: 2rem;
+    padding: 10px 30px;
+}
+
+div.gallery {
+    margin-right: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    float: left;
+    width: 15%;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }

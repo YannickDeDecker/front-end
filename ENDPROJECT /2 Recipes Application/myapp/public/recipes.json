@@ -3,8 +3,8 @@
         {
           "id": 1,
           "name": "Pasta alla puttanesca",
-          "imgmain": "../images/puttanesca.jpg",
-          "imgsub": "../images/puttanesca.jpg",
+          "imgmain": "puttanesca.jpg",
+          "imgsub": "puttanesca.jpg",
           "time": "40 minuten",
           "difficulty": "beginner",
           "tags": [
@@ -47,7 +47,7 @@
         {
             "id": 2,
             "name": "Libanese gehaktballetjes",
-            "imgmain": "../Images/puttanesca.jpg",
+            "imgmain": "libanesegehaktballetjes.jpg",
             "imgsub": "../Images/puttanesca.jpg",
             "time": "45 minuten",
             "difficulty": "medium",
@@ -110,7 +110,7 @@
           {
             "id": 3,
             "name": "Gebakken rijst met omelet",
-            "imgmain": "../Images/puttanesca.jpg",
+            "imgmain": "gebakkenrijstomelent.jpg",
             "imgsub": "../Images/puttanesca.jpg",
             "time": "40 minuten",
             "difficulty": "beginner",
@@ -161,7 +161,7 @@
           {
             "id": 4,
             "name": "Spaghetti bolognaise",
-            "imgmain": "../images/puttanesca.jpg",
+            "imgmain": "bolognaise.jpg",
             "imgsub": "../images/puttanesca.jpg",
             "time": "100 minuten",
             "difficulty": "beginner",

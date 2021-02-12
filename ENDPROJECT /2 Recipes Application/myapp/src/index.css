@@ -21,47 +21,6 @@ body{
     background-position: center;
 }
 
-#search-bar{
-    border: none;
-    color: white;
-    background-color: rgba(255,255,255,0.2);
-    border-radius: 15px;
-    width: 400px;
-    margin-left: 80px;
-}
-
-#search-bar::placeholder{
-    color: var(--dark-bg-color);
-}
-
-.navbar-brand{
-    font-weight: 900;
-    font-size: 25px;
-    text-transform: uppercase;
-}
-
-.nav-link{
-    font-size: 14px;
-    text-transform: uppercase;
-    margin: 0 10px;
-}
-
-.nav-item{
-    width: 120px;
-    text-align: center;
-}
-
-.active{
-    background-color: var(--light-orange);
-    padding: 8px 12px;
-    border-radius: 15px;
-    color: var(--dark-bg-color);
-}
-
-.icon{
-    color: var(--light-orange);
-}
-
 #showcase-container{
     background-image: url('./Images/pexels-lumn-604969.jpg');
     background-repeat: no-repeat;
@@ -73,34 +32,6 @@ body{
     margin-top: 2rem;
     margin-bottom: 2rem;
     overflow-x: hidden;
-}
-
-#filter{
-    background-color: rgba(255,255,255,0.2);
-    padding: 20px;
-    border-radius: 15px;
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 75px;
-}
-
-#filter-container{
-    margin-top: 5rem;
-}
-
-.input-group{
-    margin: 0 10px;
-}
-
-.input-group-text{
-    border: none;
-    background-color: white;
-    color: var(--light-bg-color)
-}
-
-.form-control{
-    background-color: rgba(255,255,255,0.4);
-    border: none;
 }
 
 #h2-homepage{

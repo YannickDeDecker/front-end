@@ -1,0 +1,19 @@
+.nav-link{
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+.nav-item{
+    width: 120px;
+    text-align: center;
+}
+
+.active{
+    background-color: var(--light-orange);
+    padding: 8px 12px;
+    border-radius: 15px;
+    color: var(--dark-bg-color);
+}
