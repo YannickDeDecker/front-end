@@ -19,9 +19,6 @@ export default class CardContainer extends Component {
       <div>
           <section class="gallery-block cards-gallery">
           <div className="container">
-          <div class="heading">
-            <h2>Grid Gallery</h2>
-          </div>
           <div className="row">
             {this.state.recipes.map((item, i) => {
               return (

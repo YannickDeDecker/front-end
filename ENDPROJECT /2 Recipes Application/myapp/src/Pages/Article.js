@@ -47,7 +47,7 @@ function Article() {
                   </div>
                 </div>
                 <div id="col-right" className="col-md-9">
-                  <img src={recipe.imgsub} alt="" srcset=""></img>
+                  <img src={recipe.imgsub} alt={recipe.name} srcset=""></img>
                   <ul id="tag-list">
                     {recipe.tags.map((item, index) => (
                             <li key={index}> {item}</li>
