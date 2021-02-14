@@ -1,0 +1,32 @@
+#showcase-container{
+    background-image: url('../Images/pexels-lumn-604969.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    max-width: 100%;
+    height: 500px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase-container h1{
+    background-color: var(--light-green);
+    padding: 10px 20px;
+    font-size: 3.5rem;
+    margin: 0 0 10px 0;
+}
+
+#showcase-container h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    margin: 0;
+}

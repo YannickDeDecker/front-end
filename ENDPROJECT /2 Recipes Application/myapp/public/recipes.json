@@ -4,9 +4,9 @@
           "id": 1,
           "name": "Pasta alla puttanesca",
           "imgmain": "puttanesca.jpg",
-          "imgsub": "puttanescatwo.png",
           "time": "40 minuten",
           "difficulty": "beginner",
+          "hometag": "pasta",
           "tags": [
               "pasta",
               "vegetarisch",
@@ -48,9 +48,9 @@
             "id": 2,
             "name": "Libanese gehaktballetjes",
             "imgmain": "libanesegehaktballetjes.jpg",
-            "imgsub": "../Images/puttanesca.jpg",
             "time": "45 minuten",
             "difficulty": "medium",
+            "hometag": "rijst",
             "tags": [
                 "rijst",
                 "vlees",
@@ -111,9 +111,9 @@
             "id": 3,
             "name": "Gebakken rijst met omelet",
             "imgmain": "gebakkenrijstomelent.jpg",
-            "imgsub": "../Images/puttanesca.jpg",
             "time": "40 minuten",
             "difficulty": "beginner",
+            "hometag": "wok",
             "tags": [
                 "snel",
                 "simpel",
@@ -162,9 +162,9 @@
             "id": 4,
             "name": "Spaghetti bolognaise",
             "imgmain": "bolognaise.jpg",
-            "imgsub": "../images/puttanesca.jpg",
             "time": "100 minuten",
             "difficulty": "beginner",
+            "hometag": "pasta",
             "tags": [
                 "pasta",
                 "comfortfood",
@@ -209,6 +209,76 @@
                 "Roer door de saus, zet het deksel op de pot en zet de stoofpot in de voorverwarmde oven. Laat minstens 1 uur tot 3 uur pruttelen in de oven. Hoe langer je de saus laat garen, hoe meer smaak de saus zal hebben!",
                 "Breng een ruime kookpot met water aan de kook. Voeg een flinke snuif zout toe aan het water. Kook de spaghetti gaar volgens de instructies op de verpakking.",
                 "Haal de saus uit de oven. Vis het uitgekookte kruidentuiltje uit de pot. Serveer de pasta op een bord met een flinke portie saus. Werk de spaghetti bolognaise af met geraspte kaas."
+            ]
+          },
+          {
+            "id": 5,
+            "name": "Penne all'amatriciana",
+            "imgmain": "allamatriciana.jpg",
+            "time": "30 minuten",
+            "difficulty": "beginner",
+            "hometag": "pasta",
+            "tags": [
+                "pasta",
+                "snel",
+                "vlees",
+                "italiaans"
+            ],
+            "ingredients" : [
+                "1 rode ajuin",
+                "1 rode peper",
+                "Knoflook",
+                "Tomatenblokjes",
+                "Rode cherrytomaten",
+                "Penne",
+                "Spekblokjes",
+                "Basilicum",
+                "Rucola",
+                "Pecorino",
+                "Olijfolie",
+                "Peper",
+                "Zout"
+            ],
+            "instructions": [
+                "Snipper de ui. Pers de knoflook of snijd fijn. Verwijder de zaadlijsten van de rode peper en snijd fijn. Halveer de rode cherrytomaten. Breng ruim water met een snuf zout aan de kook in een pan met deksel.",
+                "Verhit 1/2 el olijfolie per persoon in een hapjespan op middelhoog vuur. Bak de ui, knoflook en rode peper 3 - 4 minuten. Blus af met 1/2 el wittewijnazijn per persoon. Voeg vervolgens de tomatenblokjes en de cherrytomaten toe. Breng op smaak met peper en zout. Verlaag het vuur en kook 10 - 15 minuten zachtjes.",
+                "Kook de penne, afgedekt, in 14 - 16 minuten beetgaar. Giet daarna af, maar bewaar wat kookvocht. Laat uitstomen zonder deksel. Verhit ondertussen een koekenpan, zonder olie, op middelhoog vuur. Bak de spekblokjes in 4 - 6 minuten krokant. Voeg de spekjes en het vrijgekomen bakvet toe aan de tomatensaus en roer goed.",
+                "Snijd het verse basilicum in reepjes.",
+                "Voeg de penne en een scheut kookvocht, de helft van de pecorino en de helft van het basilicum toe aan de saus. Schep goed om en verhit kort.",
+                "Verdeel de rucola over de borden en serveer de penne all'Amatriciana hierop. Garneer met het overige basilicum en de overige pecorino."
+            ]
+          },
+          {
+            "id": 6,
+            "name": "Griekse salade met gebakken feta",
+            "imgmain": "salade-feta.jpg",
+            "time": "20 minuten",
+            "difficulty": "beginner",
+            "hometag": "vegetarisch",
+            "tags": [
+                "snel",
+                "vegetarisch",
+                "grieks"
+            ],
+            "ingredients" : [
+                "Krieltjes",
+                "Komkommer",
+                "Little gems",
+                "Feta",
+                "Tomatentapenade",
+                "2 pruimtomaten",
+                "1 rode ajuin",
+                "Zwarte olijven",
+                "Olijfolie",
+                "Bloem",
+                "Peper",
+                "Zout"
+            ],
+            "instructions": [
+                "Verhit 1/2 el olijfolie per persoon in een hapjespan met deksel. Voeg de halve krieltjes toe en bak, afgedekt, 8 minuten. Haal het deksel van de pan, breng op smaak met peper en zout en bak nog 3 minuten. Haal van het vuur en meng er de tomatentapenade doorheen.",
+                "Meng in een saladekom per persoon: 1/2 el extra vierge olijfolie, 1 el witte balsamicoazijn, peper en zout. Snijd de komkommer en pruimtomaat in blokjes. Snijd de little gem in reepjes. Snijd de rode ui in halve ringen. Voeg alles toe aan de saladekom en meng met de dressing.",
+                "Strooi de bloem in een diep bord. Snijd per persoon 2 stukken feta af van 25 gram. Haal de stukken feta door de bloem, zodat ze volledig bedekt zijn met een laagje bloem. Verhit 2 el olijfolie per persoon in een koekenpan op hoog vuur. Voeg de feta toe aan de koekenpan zodra de olie goed heet is en bak de feta in 2 - 3 minuten per kant goudbruin.",
+                "Verdeel de gebakken krieltjes en de salade over de borden. Serveer de gebakken feta op de salade. Garneer de salade met de olijven."
             ]
           }
       ]

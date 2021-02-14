@@ -7,8 +7,8 @@
 }
 
 .gallery-block{
-	padding-bottom: 60px;
-	padding-top: 60px;
+	padding-bottom: 40px;
+	padding-top: 40px;
 }
 
 .gallery-block .heading{
@@ -23,7 +23,7 @@
 }
 
 .gallery-block.cards-gallery h6 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 900; 
   text-transform: uppercase;
   color: white;
@@ -58,14 +58,16 @@
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
-button{
-    width: 100%;
-    background-color: var(--light-green);
-    color: white;
-    border: none;
-    margin-top: 0.75rem;
-    padding: 10px 20px;
-    border-radius: 20px;
+.tag{
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  background: var(--light-green);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  padding: 2px;
+  color: white;
 }
 
 @media (min-width: 576px) {

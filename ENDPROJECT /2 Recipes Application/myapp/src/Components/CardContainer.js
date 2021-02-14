@@ -17,32 +17,33 @@ export default class CardContainer extends Component {
   render() {
     return (
       <div>
-          <section class="gallery-block cards-gallery">
+        <section class="gallery-block cards-gallery">
           <div className="container">
-          <div className="row">
-            {this.state.recipes.map((item, i) => {
-              return (
-                <div className="col-md-6 col-lg-4">
-                  <Link key={i} to={`/article/${item.id}`}>
-                  <div className="card border-0 transform-on-hover">
-                    <a className="lightbox" href={item.imgmain}>
-                      <img
-                        src={item.imgmain}
-                        alt={item.name}
-                        className="card-img-top"
-                      ></img>
-                    </a>
-                    <div className="card-body">
-                      <h6>{item.name}</h6>
-                    </div>
+            <div className="row">
+              {this.state.recipes.map((item, i) => {
+                return (
+                  <div className="col-md-6 col-lg-3">
+                    <Link key={i} to={`/article/${item.name}`}>
+                      <div className="card border-0 transform-on-hover">
+                        <a className="lightbox" href={item.imgmain}>
+                        <p className="tag">{item.hometag}</p>
+                          <img
+                            src={item.imgmain}
+                            alt={item.name}
+                            className="card-img-top"
+                          ></img>
+                        </a>
+                        <div className="card-body">
+                          <h6>{item.name}</h6>
+                        </div>
+                      </div>
+                    </Link>
                   </div>
-                  </Link>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
-        </div>
-          </section>
+        </section>
       </div>
     );
   }
