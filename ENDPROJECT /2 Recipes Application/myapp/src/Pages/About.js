@@ -11,7 +11,7 @@ export default class About extends Component {
   render() {
     return (
       <div>
-        <div className="container">
+        <div className="container about-container">
           <div className="row row-one">
             <div className="col-6">
               <h1>Over Mezelf</h1>

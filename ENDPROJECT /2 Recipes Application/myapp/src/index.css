@@ -45,7 +45,7 @@ body{
 #tag-list{
     display: flex;
     list-style: none;
-    color: var(--light-green);
+    color: var(--light-orange);
     text-transform: uppercase;
     letter-spacing: 5px;
     margin: 0 0 10px 0;
@@ -76,7 +76,7 @@ body{
 }
 
 #instructions-list li span{
-    color: var(--light-green);
+    color: var(--light-orange);
     font-weight: bold;
     font-size: 1rem;
     margin-right: 5px;
@@ -174,7 +174,7 @@ body{
 }
 
 .fa-clock, .fa-award{
-    color: var(--light-orange);
+    color: var(--light-green);
     margin: 0;
 }
 

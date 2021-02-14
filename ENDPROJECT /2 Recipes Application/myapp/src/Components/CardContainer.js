@@ -23,6 +23,7 @@ export default class CardContainer extends Component {
             {this.state.recipes.map((item, i) => {
               return (
                 <div className="col-md-6 col-lg-4">
+                  <Link key={i} to={`/article/${item.id}`}>
                   <div className="card border-0 transform-on-hover">
                     <a className="lightbox" href={item.imgmain}>
                       <img
@@ -33,9 +34,9 @@ export default class CardContainer extends Component {
                     </a>
                     <div className="card-body">
                       <h6>{item.name}</h6>
-                    <button><Link className="text-white" key={i} to={`/article/${item.id}`}>Klik voor recept</Link></button>
                     </div>
                   </div>
+                  </Link>
                 </div>
               );
             })}
