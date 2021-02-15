@@ -19,6 +19,8 @@
     background-color: var(--light-green);
     padding: 10px 20px;
     font-size: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
     margin: 0 0 10px 0;
 }
 
