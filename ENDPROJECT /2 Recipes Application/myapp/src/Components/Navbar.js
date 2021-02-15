@@ -26,6 +26,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <NavLink
                   exact
+                  eventKey="1"
                   activeClassName="active"
                   className="nav-link"
                   to="/"
@@ -35,6 +36,7 @@ export default function Navbar() {
               </li>
               <li className="nav-item">
                 <NavLink
+                  eventKey="2"
                   activeClassName="active"
                   className="nav-link"
                   to="/about"
@@ -44,6 +46,7 @@ export default function Navbar() {
               </li>
               <li className="nav-item">
                 <NavLink
+                  eventKey="3"
                   activeClassName="active"
                   className="nav-link"
                   to="/contact"

@@ -30,3 +30,23 @@
     text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
     margin: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    #showcase-container h1{
+        background-color: var(--light-green);
+        line-height: 1;
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        margin: 0 0 10px 0;
+    }
+
+    #showcase-container h2{
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 5px;
+        font-size: 1rem;
+        color: white;
+        text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+        margin: 0;
+    }
+}
