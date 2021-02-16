@@ -7,6 +7,7 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
 import Article from './Pages/Article'
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
         <Route path='/about' component={About} />
         <Route path='/contact' component={Contact} />
         <Route path='/article/:name' component={Article} />
+        <div>
+          <Footer/>
+        </div>
       </Router>
     </div>
   );

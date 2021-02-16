@@ -1,0 +1,27 @@
+.footer-container{
+    background-color: rgba(255,255,255,0.2);
+    -webkit-box-shadow: -1px -4px 7px -4px #000000; 
+    box-shadow: -1px -4px 7px -4px #000000;
+}
+
+footer p{
+    text-align: center;
+    font-size: 0.75rem;
+    margin: 0;
+}
+  
+footer{
+    padding: 15px 0;
+}
+
+footer span{
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+    footer p{
+        text-align: center;
+        font-size: 0.5rem;
+        margin: 0;
+    }
+}
