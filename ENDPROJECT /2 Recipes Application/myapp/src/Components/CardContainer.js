@@ -1,4 +1,4 @@
-import React, { Component, setState, useEffect, useState } from "react";
+import React, { Component, setState } from "react";
 import { Link } from "react-router-dom";
 import "./CardContainer.css";
 
