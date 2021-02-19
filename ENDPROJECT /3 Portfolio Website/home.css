@@ -1,0 +1,14 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./lum3n--RBuQ2PK_L8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,60 @@
+:root {
+    --grey-light: #c0c0c0;
+    --grey-dark: #262626;
+  }
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #F7EFDF;
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+/* IMAGE GALLERY */
+
+.card-body{
+    background-color: var(--grey-dark);
+}
+
+.gallery-block{
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+.gallery-block .heading{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-block .heading h2{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.gallery-block.cards-gallery h6 {
+  font-size: 18px;
+  font-weight: 900; 
+  text-transform: uppercase;
+  color: var(--grey-dark);
+  padding: 1rem 2rem 0 2rem;
+  text-align: center;
+  border-top: 3px solid black;
+}
+
+.gallery-block.cards-gallery .card-body {
+  text-align: center; 
+}
+
+.gallery-block.cards-gallery .card-body p {
+  font-size: 15px; 
+}
+
+.gallery-block.cards-gallery a {
+  color: #212529; 
+}
