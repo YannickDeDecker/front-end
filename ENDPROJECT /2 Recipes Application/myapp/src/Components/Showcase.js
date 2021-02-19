@@ -12,7 +12,7 @@ export default function Showcase() {
   `;
 
   const SlideDiv = styled.div`
-  animation: 3s ${slideAnimation};
+  animation: 2s ${slideAnimation};
 `;
 
   return (
