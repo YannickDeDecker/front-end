@@ -20,3 +20,7 @@ body{
     background-repeat: repeat;
     background-position: center;
 }
+
+.btn-close{
+    color: white;
+}

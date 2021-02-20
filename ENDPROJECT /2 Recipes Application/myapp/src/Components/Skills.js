@@ -3,6 +3,7 @@ import { PieChart } from "react-minimal-pie-chart";
 import "./Skills.css";
 
 const skills = () => {
+  const lineWidth = 60;
   return (
     <div className="skills-container">
       <div className="container">
@@ -25,6 +26,8 @@ const skills = () => {
                 { title: "One", value: 40, color: "#fbbe88" },
                 { title: "Two", value: 60, color: "#569E78" },
               ]}
+              animate
+              lineWidth={60}
             />
           </div>
           <div className="col-md-4">
